@@ -1,0 +1,26 @@
+loaders:
+  - type: python
+
+processors:
+  - type: filter
+  - type: smart
+  - type: crossref
+
+renderer:
+  type: mkdocs
+  output_directory: docs/build
+
+  pages:
+    - title: Home
+      name: index
+      source: README.md
+
+  mkdocs_config:
+    site_name: Threatstate Documentation
+    repo_url: https://github.com/threatstate/threatstate
+    edit_uri: edit/main/docs
+    theme:
+      name: material
+      palette:
+        primary: red
+
